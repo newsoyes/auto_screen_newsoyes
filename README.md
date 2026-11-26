@@ -115,8 +115,8 @@ The script prompts the user to select batch HTML files, modifies them to inject 
 
 1. **Clone or Download** the project repository:
    ```bash
-   git clone https://github.com/your-username/auto-screen-newsoyes.git
-   cd auto-screen-newsoyes
+   git clone https://github.com/newsoyes/auto_screen_newsoyes.git
+   cd auto_screen_newsoyes
    ```
 
 2. **Create and Activate a Virtual Environment** *(Optional but recommended)*:
@@ -128,7 +128,7 @@ The script prompts the user to select batch HTML files, modifies them to inject 
 
 3. **Install Required Python Dependencies:**
    ```bash
-   pip install pyautogui pygetwindow
+   pip install -r requirements.txt
    ```
    > *Note: `os`, `subprocess`, `time`, `shutil`, and `tkinter` are built into standard Python distributions on Windows.*
 
@@ -140,6 +140,7 @@ The script prompts the user to select batch HTML files, modifies them to inject 
    ```bash
    python auto_screen_newsoyes.py
    ```
+   *(หรือดับเบิลคลิกไฟล์ `run.bat` บน Windows เพื่อติดตั้งไลบรารีและเปิดใช้งานทันที)*
 2. **Dialog 1: Select HTML Files**
    - A file picker window will appear. Select one or more `.html` files you wish to process.
 3. **Dialog 2: Destination Folder for HTMLs**
@@ -286,13 +287,13 @@ modified_content = content.replace("//", "// [Your Custom Credit or Link Here]")
 
 1. **ดาวน์โหลดหรือโคลนโปรเจกต์:**
    ```bash
-   git clone https://github.com/your-username/auto-screen-newsoyes.git
-   cd auto-screen-newsoyes
+   git clone https://github.com/newsoyes/auto_screen_newsoyes.git
+   cd auto_screen_newsoyes
    ```
 
 2. **ติดตั้งไลบรารีที่จำเป็นผ่าน Pip:**
    ```bash
-   pip install pyautogui pygetwindow
+   pip install -r requirements.txt
    ```
    *(หมายเหตุ: โมดูล `os`, `subprocess`, `time`, `shutil` และ `tkinter` เป็นโมดูลมาตรฐานที่มาพร้อมกับ Python บน Windows อยู่แล้ว ไม่ต้องติดตั้งเพิ่ม)*
 
@@ -304,6 +305,7 @@ modified_content = content.replace("//", "// [Your Custom Credit or Link Here]")
    ```bash
    python auto_screen_newsoyes.py
    ```
+   *(หรือดับเบิลคลิกไฟล์ `run.bat` บน Windows เพื่อติดตั้งไลบรารีและเปิดใช้งานทันที)*
 2. **ขั้นตอนที่ 1: เลือกไฟล์ HTML**
    - ระบบจะเปิดหน้าต่าง File Explorer ขึ้นมา ให้เลือกไฟล์ `.html` ที่ต้องการ (สามารถกด `Ctrl + คลิก` หรือ `Ctrl + A` เพื่อเลือกหลายไฟล์พร้อมกันได้)
 3. **ขั้นตอนที่ 2: เลือกโฟลเดอร์ปลายทางสำหรับไฟล์ HTML**
